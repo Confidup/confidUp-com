@@ -46,6 +46,18 @@ img {
   color: var(--wp--preset--color--dark);
 }
 
+/* Mobile nav overlay */
+.wp-block-navigation__responsive-container.is-menu-open {
+  background-color: var(--wp--preset--color--white);
+  padding: var(--wp--preset--spacing--40);
+}
+
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-item__content {
+  color: var(--wp--preset--color--dark);
+  font-size: 1.125rem;
+  padding: 0.5rem 0;
+}
+
 /* Footer */
 .site-footer {
   margin-top: auto;
@@ -72,4 +84,165 @@ img {
 
 .footer-nav-list li {
   color: #d1d5db;
+}
+
+/* Tables — used in cookie policy */
+.wp-block-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.wp-block-table th,
+.wp-block-table td {
+  padding: 0.625rem 0.75rem;
+  border: 1px solid #e5e7eb;
+  text-align: left;
+  vertical-align: top;
+}
+
+.wp-block-table th {
+  background-color: #f9fafb;
+  font-weight: 600;
+}
+
+/* ============================================================
+   RESPONSIVE — Tablet (≤ 1024px)
+   ============================================================ */
+@media (max-width: 1024px) {
+  /* Reduce hero padding */
+  .page-hero {
+    padding-top: var(--wp--preset--spacing--50) !important;
+    padding-bottom: var(--wp--preset--spacing--50) !important;
+  }
+}
+
+/* ============================================================
+   RESPONSIVE — Mobile (≤ 781px)
+   WordPress stacks wp:columns at this breakpoint by default.
+   ============================================================ */
+@media (max-width: 781px) {
+
+  /* --- Layout --- */
+  .wp-block-columns {
+    flex-direction: column !important;
+  }
+
+  .wp-block-column {
+    flex-basis: 100% !important;
+    width: 100% !important;
+  }
+
+  /* --- Hero sections --- */
+  .page-hero {
+    padding-top: var(--wp--preset--spacing--50) !important;
+    padding-bottom: var(--wp--preset--spacing--50) !important;
+    text-align: center;
+  }
+
+  /* --- Header CTA button — hide on small screens to save space --- */
+  .site-header .wp-block-buttons {
+    display: none;
+  }
+
+  /* --- Footer --- */
+  .site-footer .wp-block-columns {
+    gap: var(--wp--preset--spacing--50) !important;
+  }
+
+  .site-footer .wp-block-column:first-child {
+    border-bottom: 1px solid #374151;
+    padding-bottom: var(--wp--preset--spacing--50);
+  }
+
+  /* Bottom bar: stack copyright + legal links */
+  .site-footer .wp-block-group[style*="justify-content: space-between"],
+  .site-footer .wp-block-group[style*="space-between"] {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: var(--wp--preset--spacing--30) !important;
+  }
+
+  /* --- Pricing cards --- */
+  .wp-block-column .wp-block-group[style*="border"] {
+    margin-bottom: var(--wp--preset--spacing--40);
+  }
+
+  /* --- Tables: allow horizontal scroll --- */
+  .wp-block-table {
+    overflow-x: auto;
+    display: block;
+  }
+
+  .wp-block-table table {
+    min-width: 480px;
+  }
+
+  /* --- Post navigation --- */
+  .wp-block-post-navigation-link {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+
+  /* --- Query: switch 3-column grids to single column --- */
+  .wp-block-query .wp-block-post-template.is-flex-container {
+    flex-direction: column !important;
+  }
+
+  .wp-block-query .wp-block-post-template.is-flex-container > li {
+    width: 100% !important;
+  }
+
+  /* --- Search block --- */
+  .wp-block-search__inside-wrapper {
+    flex-wrap: wrap;
+  }
+
+  /* --- Buttons: full-width on mobile --- */
+  .page-hero .wp-block-buttons .wp-block-button {
+    width: 100%;
+  }
+
+  .page-hero .wp-block-buttons .wp-block-button .wp-block-button__link {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* ============================================================
+   RESPONSIVE — Small mobile (≤ 480px)
+   ============================================================ */
+@media (max-width: 480px) {
+
+  /* Extra breathing room on very small screens */
+  .wp-block-group.alignfull {
+    padding-left: var(--wp--preset--spacing--40) !important;
+    padding-right: var(--wp--preset--spacing--40) !important;
+  }
+
+  /* Stack button groups vertically */
+  .wp-block-buttons.is-horizontal,
+  .wp-block-buttons[class*="flex"] {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+
+  .wp-block-buttons .wp-block-button {
+    width: 100%;
+  }
+
+  .wp-block-buttons .wp-block-button .wp-block-button__link {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Reduce section padding */
+  .wp-block-group[style*="padding-top:var(--wp--preset--spacing--70)"] {
+    padding-top: var(--wp--preset--spacing--60) !important;
+  }
+
+  .wp-block-group[style*="padding-bottom:var(--wp--preset--spacing--70)"] {
+    padding-bottom: var(--wp--preset--spacing--60) !important;
+  }
 }
