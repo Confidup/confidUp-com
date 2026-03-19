@@ -84,6 +84,7 @@
     { "name": "page-services", "title": "Services Page", "postTypes": ["page"] },
     { "name": "page-pricing", "title": "Pricing Page", "postTypes": ["page"] },
     { "name": "page-about", "title": "About Us Page", "postTypes": ["page"] },
-    { "name": "page-contact", "title": "Contact Us Page", "postTypes": ["page"] }
+    { "name": "page-contact", "title": "Contact Us Page", "postTypes": ["page"] },
+    { "name": "page-blog", "title": "Blog Page", "postTypes": ["page"] }
   ]
 }
