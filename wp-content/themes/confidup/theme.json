@@ -33,6 +33,7 @@
       ]
     },
     "typography": {
+      "fluid": true,
       "fontFamilies": [
         {
           "slug": "sans",
@@ -41,13 +42,13 @@
         }
       ],
       "fontSizes": [
-        { "slug": "sm",   "size": "0.875rem", "name": "Small" },
-        { "slug": "base", "size": "1rem",     "name": "Base" },
-        { "slug": "md",   "size": "1.25rem",  "name": "Medium" },
-        { "slug": "lg",   "size": "1.5rem",   "name": "Large" },
-        { "slug": "xl",   "size": "2rem",     "name": "XL" },
-        { "slug": "2xl",  "size": "3rem",     "name": "2XL" },
-        { "slug": "3xl",  "size": "4rem",     "name": "3XL" }
+        { "slug": "sm",   "size": "0.875rem", "name": "Small",  "fluid": false },
+        { "slug": "base", "size": "1rem",     "name": "Base",   "fluid": false },
+        { "slug": "md",   "size": "1.25rem",  "name": "Medium", "fluid": { "min": "1.1rem",  "max": "1.25rem" } },
+        { "slug": "lg",   "size": "1.5rem",   "name": "Large",  "fluid": { "min": "1.25rem", "max": "1.5rem"  } },
+        { "slug": "xl",   "size": "2rem",     "name": "XL",     "fluid": { "min": "1.5rem",  "max": "2rem"    } },
+        { "slug": "2xl",  "size": "3rem",     "name": "2XL",    "fluid": { "min": "1.75rem", "max": "3rem"    } },
+        { "slug": "3xl",  "size": "4rem",     "name": "3XL",    "fluid": { "min": "2rem",    "max": "4rem"    } }
       ]
     },
     "spacing": {
