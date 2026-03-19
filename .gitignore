@@ -22,7 +22,7 @@
 # =====================
 # WordPress Config
 # =====================
-/wp-config.php
+# wp-config.php is tracked — secrets are loaded from .env
 /wp-config-sample.php
 
 # =====================
