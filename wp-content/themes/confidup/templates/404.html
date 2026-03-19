@@ -1,13 +1,156 @@
 <!-- wp:template-part {"slug":"header","area":"header"} /-->
 
-<!-- wp:group {"tagName":"main","layout":{"type":"constrained"}} -->
+<!-- wp:group {"tagName":"main","layout":{"type":"default"}} -->
 <main class="wp-block-group">
-  <!-- wp:heading {"level":1,"fontSize":"2xl"} -->
-  <h1 class="wp-block-heading has-2-xl-font-size">Page Not Found</h1>
-  <!-- /wp:heading -->
-  <!-- wp:paragraph -->
-  <p>The page you're looking for doesn't exist. <a href="/">Return home</a>.</p>
-  <!-- /wp:paragraph -->
+
+  <!-- 404 Hero -->
+  <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"}}},"backgroundColor":"light","layout":{"type":"constrained"}} -->
+  <div class="wp-block-group alignfull has-light-background-color has-background">
+    <!-- wp:group {"layout":{"type":"constrained","contentSize":"640px"}} -->
+    <div class="wp-block-group">
+
+      <!-- wp:paragraph {"align":"center","fontSize":"3xl","style":{"typography":{"fontWeight":"800","lineHeight":"1"},"spacing":{"margin":{"bottom":"var:preset|spacing|30"}}}} -->
+      <p class="has-text-align-center has-3-xl-font-size" style="font-weight:800;line-height:1;margin-bottom:var(--wp--preset--spacing--30)">404</p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:heading {"textAlign":"center","level":1,"fontSize":"2xl"} -->
+      <h1 class="wp-block-heading has-text-align-center has-2-xl-font-size">Page not found</h1>
+      <!-- /wp:heading -->
+
+      <!-- wp:paragraph {"align":"center","style":{"color":{"text":"#6b7280"},"spacing":{"margin":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|50"}}}} -->
+      <p class="has-text-align-center" style="color:#6b7280;margin-top:var(--wp--preset--spacing--40);margin-bottom:var(--wp--preset--spacing--50)">The page you're looking for doesn't exist or may have been moved. Let's get you back on track.</p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:search {"label":"Search","showLabel":false,"placeholder":"Search our site...","buttonText":"Search","buttonPosition":"button-inside","buttonUseIcon":true,"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|50"}}}} /-->
+
+      <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center","flexWrap":"wrap"},"style":{"spacing":{"blockGap":"var:preset|spacing|30"}}} -->
+      <div class="wp-block-buttons">
+        <!-- wp:button {"backgroundColor":"primary","textColor":"white"} -->
+        <div class="wp-block-button"><a class="wp-block-button__link has-primary-background-color has-white-color has-text-color has-background wp-element-button" href="/">Go to Homepage</a></div>
+        <!-- /wp:button -->
+        <!-- wp:button {"className":"is-style-outline"} -->
+        <div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/contact">Contact Us</a></div>
+        <!-- /wp:button -->
+      </div>
+      <!-- /wp:buttons -->
+
+    </div>
+    <!-- /wp:group -->
+  </div>
+  <!-- /wp:group -->
+
+  <!-- Popular Pages -->
+  <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
+  <div class="wp-block-group alignfull">
+
+    <!-- wp:heading {"textAlign":"center","level":2,"fontSize":"xl","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|50"}}}} -->
+    <h2 class="wp-block-heading has-text-align-center has-xl-font-size" style="margin-bottom:var(--wp--preset--spacing--50)">You might be looking for…</h2>
+    <!-- /wp:heading -->
+
+    <!-- wp:columns {"style":{"spacing":{"blockGap":"var:preset|spacing|40"}}} -->
+    <div class="wp-block-columns">
+
+      <!-- wp:column -->
+      <div class="wp-block-column">
+        <!-- wp:group {"style":{"border":{"radius":"8px","width":"1px","color":"#e5e7eb"},"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|40","right":"var:preset|spacing|40"}}},"layout":{"type":"constrained"}} -->
+        <div class="wp-block-group" style="border-radius:8px;border:1px solid #e5e7eb;padding:var(--wp--preset--spacing--40)">
+          <!-- wp:heading {"level":3,"fontSize":"md","style":{"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|20"}}}} -->
+          <h3 class="wp-block-heading has-md-font-size" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--20)">Services</h3>
+          <!-- /wp:heading -->
+          <!-- wp:paragraph {"fontSize":"sm","style":{"color":{"text":"#6b7280"},"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|30"}}}} -->
+          <p class="has-sm-font-size" style="color:#6b7280;margin-top:0;margin-bottom:var(--wp--preset--spacing--30)">Explore our SEO, AEO, and GEO services and find out how we can grow your visibility.</p>
+          <!-- /wp:paragraph -->
+          <!-- wp:paragraph {"fontSize":"sm"} -->
+          <p class="has-sm-font-size"><a href="/services" style="color:var(--wp--preset--color--primary);text-decoration:none;font-weight:500">View Services →</a></p>
+          <!-- /wp:paragraph -->
+        </div>
+        <!-- /wp:group -->
+      </div>
+      <!-- /wp:column -->
+
+      <!-- wp:column -->
+      <div class="wp-block-column">
+        <!-- wp:group {"style":{"border":{"radius":"8px","width":"1px","color":"#e5e7eb"},"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|40","right":"var:preset|spacing|40"}}},"layout":{"type":"constrained"}} -->
+        <div class="wp-block-group" style="border-radius:8px;border:1px solid #e5e7eb;padding:var(--wp--preset--spacing--40)">
+          <!-- wp:heading {"level":3,"fontSize":"md","style":{"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|20"}}}} -->
+          <h3 class="wp-block-heading has-md-font-size" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--20)">Case Studies</h3>
+          <!-- /wp:heading -->
+          <!-- wp:paragraph {"fontSize":"sm","style":{"color":{"text":"#6b7280"},"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|30"}}}} -->
+          <p class="has-sm-font-size" style="color:#6b7280;margin-top:0;margin-bottom:var(--wp--preset--spacing--30)">See real results we've delivered for clients across industries.</p>
+          <!-- /wp:paragraph -->
+          <!-- wp:paragraph {"fontSize":"sm"} -->
+          <p class="has-sm-font-size"><a href="/case-studies" style="color:var(--wp--preset--color--primary);text-decoration:none;font-weight:500">View Case Studies →</a></p>
+          <!-- /wp:paragraph -->
+        </div>
+        <!-- /wp:group -->
+      </div>
+      <!-- /wp:column -->
+
+      <!-- wp:column -->
+      <div class="wp-block-column">
+        <!-- wp:group {"style":{"border":{"radius":"8px","width":"1px","color":"#e5e7eb"},"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|40","right":"var:preset|spacing|40"}}},"layout":{"type":"constrained"}} -->
+        <div class="wp-block-group" style="border-radius:8px;border:1px solid #e5e7eb;padding:var(--wp--preset--spacing--40)">
+          <!-- wp:heading {"level":3,"fontSize":"md","style":{"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|20"}}}} -->
+          <h3 class="wp-block-heading has-md-font-size" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--20)">Pricing</h3>
+          <!-- /wp:heading -->
+          <!-- wp:paragraph {"fontSize":"sm","style":{"color":{"text":"#6b7280"},"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|30"}}}} -->
+          <p class="has-sm-font-size" style="color:#6b7280;margin-top:0;margin-bottom:var(--wp--preset--spacing--30)">Transparent pricing plans for businesses at every stage of growth.</p>
+          <!-- /wp:paragraph -->
+          <!-- wp:paragraph {"fontSize":"sm"} -->
+          <p class="has-sm-font-size"><a href="/pricing" style="color:var(--wp--preset--color--primary);text-decoration:none;font-weight:500">View Pricing →</a></p>
+          <!-- /wp:paragraph -->
+        </div>
+        <!-- /wp:group -->
+      </div>
+      <!-- /wp:column -->
+
+      <!-- wp:column -->
+      <div class="wp-block-column">
+        <!-- wp:group {"style":{"border":{"radius":"8px","width":"1px","color":"#e5e7eb"},"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|40","right":"var:preset|spacing|40"}}},"layout":{"type":"constrained"}} -->
+        <div class="wp-block-group" style="border-radius:8px;border:1px solid #e5e7eb;padding:var(--wp--preset--spacing--40)">
+          <!-- wp:heading {"level":3,"fontSize":"md","style":{"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|20"}}}} -->
+          <h3 class="wp-block-heading has-md-font-size" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--20)">Blog</h3>
+          <!-- /wp:heading -->
+          <!-- wp:paragraph {"fontSize":"sm","style":{"color":{"text":"#6b7280"},"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|30"}}}} -->
+          <p class="has-sm-font-size" style="color:#6b7280;margin-top:0;margin-bottom:var(--wp--preset--spacing--30)">Insights, guides, and updates on SEO, AEO, GEO, and digital marketing.</p>
+          <!-- /wp:paragraph -->
+          <!-- wp:paragraph {"fontSize":"sm"} -->
+          <p class="has-sm-font-size"><a href="/blog" style="color:var(--wp--preset--color--primary);text-decoration:none;font-weight:500">Visit Blog →</a></p>
+          <!-- /wp:paragraph -->
+        </div>
+        <!-- /wp:group -->
+      </div>
+      <!-- /wp:column -->
+
+    </div>
+    <!-- /wp:columns -->
+
+  </div>
+  <!-- /wp:group -->
+
+  <!-- CTA -->
+  <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"backgroundColor":"dark","textColor":"white","layout":{"type":"constrained"}} -->
+  <div class="wp-block-group alignfull has-dark-background-color has-white-color has-text-color has-background">
+    <!-- wp:group {"layout":{"type":"constrained","contentSize":"640px"}} -->
+    <div class="wp-block-group">
+      <!-- wp:heading {"textAlign":"center","level":2,"fontSize":"xl"} -->
+      <h2 class="wp-block-heading has-text-align-center has-xl-font-size">Still can't find what you need?</h2>
+      <!-- /wp:heading -->
+      <!-- wp:paragraph {"align":"center","style":{"color":{"text":"#9ca3af"},"spacing":{"margin":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|50"}}}} -->
+      <p class="has-text-align-center" style="color:#9ca3af;margin-top:var(--wp--preset--spacing--30);margin-bottom:var(--wp--preset--spacing--50)">Our team is happy to help. Book a free call and we'll point you in the right direction.</p>
+      <!-- /wp:paragraph -->
+      <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
+      <div class="wp-block-buttons">
+        <!-- wp:button {"backgroundColor":"primary","textColor":"white"} -->
+        <div class="wp-block-button"><a class="wp-block-button__link has-primary-background-color has-white-color has-text-color has-background wp-element-button" href="/contact">Book a Free Call</a></div>
+        <!-- /wp:button -->
+      </div>
+      <!-- /wp:buttons -->
+    </div>
+    <!-- /wp:group -->
+  </div>
+  <!-- /wp:group -->
+
 </main>
 <!-- /wp:group -->
 
