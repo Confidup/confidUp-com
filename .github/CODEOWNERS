@@ -1,0 +1,18 @@
+# CODEOWNERS
+# Defines who is responsible for reviewing changes to specific files/directories.
+# https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Default — all files
+* @Confidup
+
+# Theme
+/wp-content/themes/confidup/ @Confidup
+
+# Custom plugin
+/wp-content/plugins/confidup-core/ @Confidup
+
+# CI/CD workflows
+/.github/ @Confidup
+
+# WordPress config
+/wp-config.php @Confidup
