@@ -89,6 +89,7 @@
     { "name": "page-case-studies", "title": "Case Studies Page", "postTypes": ["page"] },
     { "name": "page-testimonials", "title": "Testimonials Page", "postTypes": ["page"] },
     { "name": "page-faq", "title": "FAQ Page", "postTypes": ["page"] },
-    { "name": "page-privacy-policy", "title": "Privacy Policy Page", "postTypes": ["page"] }
+    { "name": "page-privacy-policy", "title": "Privacy Policy Page", "postTypes": ["page"] },
+    { "name": "page-terms", "title": "Terms & Conditions Page", "postTypes": ["page"] }
   ]
 }
