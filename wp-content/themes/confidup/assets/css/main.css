@@ -21,6 +21,29 @@ img {
 /* Header */
 .site-header {
   border-bottom: 1px solid #e5e7eb;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.primary-navigation .wp-block-navigation__container {
+  gap: var(--wp--preset--spacing--40);
+}
+
+.primary-navigation .wp-block-navigation-item__content {
+  color: var(--wp--preset--color--dark);
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.primary-navigation .wp-block-navigation-item__content:hover {
+  color: var(--wp--preset--color--primary);
+}
+
+/* Mobile nav toggle */
+.wp-block-navigation__responsive-container-open,
+.wp-block-navigation__responsive-container-close {
+  color: var(--wp--preset--color--dark);
 }
 
 /* Footer */
