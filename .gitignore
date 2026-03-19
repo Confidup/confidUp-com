@@ -1,0 +1,66 @@
+# =====================
+# WordPress Core
+# =====================
+/index.php
+/license.txt
+/readme.html
+/wp-activate.php
+/wp-blog-header.php
+/wp-comments-post.php
+/wp-cron.php
+/wp-links-opml.php
+/wp-load.php
+/wp-login.php
+/wp-mail.php
+/wp-settings.php
+/wp-signup.php
+/wp-trackback.php
+/xmlrpc.php
+/wp-admin/
+/wp-includes/
+
+# =====================
+# WordPress Config
+# =====================
+/wp-config.php
+/wp-config-sample.php
+
+# =====================
+# wp-content — keep only custom code
+# =====================
+/wp-content/upgrade/
+/wp-content/cache/
+/wp-content/backup-db/
+/wp-content/advanced-cache.php
+/wp-content/wp-cache-config.php
+/wp-content/object-cache.php
+
+# =====================
+# Environment
+# =====================
+.env
+.env.*
+!.env.example
+
+# =====================
+# OS & Editor
+# =====================
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# =====================
+# Node
+# =====================
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# =====================
+# Composer
+# =====================
+/vendor/
+composer.lock
