@@ -1,0 +1,5 @@
+# Ignore all third-party plugins
+*
+!.gitignore
+!confidup-core/
+!confidup-core/**
