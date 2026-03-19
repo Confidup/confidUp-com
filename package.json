@@ -1,0 +1,17 @@
+{
+  "name": "confidup-com",
+  "version": "1.0.0",
+  "description": "ConfidUp WordPress website",
+  "private": true,
+  "scripts": {
+    "lint:css": "stylelint 'wp-content/themes/confidup/assets/css/**/*.css'",
+    "lint:css:fix": "stylelint 'wp-content/themes/confidup/assets/css/**/*.css' --fix",
+    "lint:js": "eslint 'wp-content/themes/confidup/assets/js/**/*.js' 'wp-content/plugins/confidup-core/**/*.js'",
+    "lint:js:fix": "eslint 'wp-content/themes/confidup/assets/js/**/*.js' 'wp-content/plugins/confidup-core/**/*.js' --fix"
+  },
+  "devDependencies": {
+    "eslint": "^9.0.0",
+    "stylelint": "^16.0.0",
+    "stylelint-config-standard": "^36.0.0"
+  }
+}
