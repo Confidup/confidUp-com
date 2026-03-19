@@ -86,6 +86,7 @@
     { "name": "page-about", "title": "About Us Page", "postTypes": ["page"] },
     { "name": "page-contact", "title": "Contact Us Page", "postTypes": ["page"] },
     { "name": "page-blog", "title": "Blog Page", "postTypes": ["page"] },
-    { "name": "page-case-studies", "title": "Case Studies Page", "postTypes": ["page"] }
+    { "name": "page-case-studies", "title": "Case Studies Page", "postTypes": ["page"] },
+    { "name": "page-testimonials", "title": "Testimonials Page", "postTypes": ["page"] }
   ]
 }
