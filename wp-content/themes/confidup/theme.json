@@ -1,0 +1,85 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "settings": {
+    "appearanceTools": true,
+    "color": {
+      "palette": [
+        {
+          "slug": "primary",
+          "color": "#0057FF",
+          "name": "Primary"
+        },
+        {
+          "slug": "secondary",
+          "color": "#00C48C",
+          "name": "Secondary"
+        },
+        {
+          "slug": "dark",
+          "color": "#0D0D0D",
+          "name": "Dark"
+        },
+        {
+          "slug": "light",
+          "color": "#F5F5F5",
+          "name": "Light"
+        },
+        {
+          "slug": "white",
+          "color": "#FFFFFF",
+          "name": "White"
+        }
+      ]
+    },
+    "typography": {
+      "fontFamilies": [
+        {
+          "slug": "sans",
+          "name": "Sans",
+          "fontFamily": "Inter, system-ui, -apple-system, sans-serif"
+        }
+      ],
+      "fontSizes": [
+        { "slug": "sm",   "size": "0.875rem", "name": "Small" },
+        { "slug": "base", "size": "1rem",     "name": "Base" },
+        { "slug": "md",   "size": "1.25rem",  "name": "Medium" },
+        { "slug": "lg",   "size": "1.5rem",   "name": "Large" },
+        { "slug": "xl",   "size": "2rem",     "name": "XL" },
+        { "slug": "2xl",  "size": "3rem",     "name": "2XL" },
+        { "slug": "3xl",  "size": "4rem",     "name": "3XL" }
+      ]
+    },
+    "spacing": {
+      "spacingScale": {
+        "operator": "*",
+        "increment": 1.5,
+        "steps": 7,
+        "mediumStep": 1.5,
+        "unit": "rem"
+      }
+    },
+    "layout": {
+      "contentSize": "760px",
+      "wideSize": "1200px"
+    }
+  },
+  "styles": {
+    "typography": {
+      "fontFamily": "var(--wp--preset--font-family--sans)",
+      "fontSize": "var(--wp--preset--font-size--base)",
+      "lineHeight": "1.6"
+    },
+    "color": {
+      "background": "var(--wp--preset--color--white)",
+      "text": "var(--wp--preset--color--dark)"
+    }
+  },
+  "templateParts": [
+    { "name": "header", "title": "Header", "area": "header" },
+    { "name": "footer", "title": "Footer", "area": "footer" }
+  ],
+  "customTemplates": [
+    { "name": "page-full-width", "title": "Full Width Page", "postTypes": ["page"] }
+  ]
+}

@@ -1,0 +1,29 @@
+/* ConfidUp — Main Stylesheet */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--wp--preset--font-family--sans);
+  color: var(--wp--preset--color--dark);
+  background-color: var(--wp--preset--color--white);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header */
+.site-header {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* Footer */
+.site-footer {
+  margin-top: auto;
+}
