@@ -80,6 +80,10 @@
     { "name": "footer", "title": "Footer", "area": "footer" }
   ],
   "customTemplates": [
-    { "name": "page-full-width", "title": "Full Width Page", "postTypes": ["page"] }
+    { "name": "page-full-width", "title": "Full Width Page", "postTypes": ["page"] },
+    { "name": "page-services", "title": "Services Page", "postTypes": ["page"] },
+    { "name": "page-pricing", "title": "Pricing Page", "postTypes": ["page"] },
+    { "name": "page-about", "title": "About Us Page", "postTypes": ["page"] },
+    { "name": "page-contact", "title": "Contact Us Page", "postTypes": ["page"] }
   ]
 }
