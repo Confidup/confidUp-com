@@ -6,6 +6,10 @@ ConfidUp is a WordPress website for a digital marketing agency specializing in:
 - **AEO** (Answer Engine Optimization)
 - **GEO** (Generative Engine Optimization)
 
+## Repository
+
+https://github.com/Confidup/confidUp-com
+
 ## Tech Stack
 
 - WordPress
