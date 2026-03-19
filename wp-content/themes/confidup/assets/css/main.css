@@ -50,3 +50,26 @@ img {
 .site-footer {
   margin-top: auto;
 }
+
+.footer-nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.footer-nav-list a {
+  color: #d1d5db;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-nav-list a:hover {
+  color: #ffffff;
+}
+
+.footer-nav-list li {
+  color: #d1d5db;
+}
